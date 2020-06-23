@@ -1,14 +1,13 @@
 // Update with your config settings.
-
+pgconnection = process.env.DATABASE_URL
 module.exports = {
 
   development: {
-    client: 'sqlite3',
-    connection: { filename: './database/recipes.db3' },
-    useNullAsDefault: true,
+    client: 'pg',
+    connection: { host: "localhost", 
+    database: "recipes", user: 'postgres', password: "ohman4" },
     migrations: {
       directory: './database/migrations',
-      tableName: 'dbmigrations',
     },
     seeds: { directory: './database/seeds' },
   },
@@ -16,19 +15,12 @@ module.exports = {
  
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
+    client: 'pg',
+    connection: pgconnection,
     migrations: {
-      tableName: 'knex_migrations'
-    }
+      directory: './database/migrations',
+    },
+    seeds: { directory: './database/seeds' },
   }
 
 };
