@@ -1,0 +1,5 @@
+https://secret-family-recipes-1.herokuapp.com/api/auth/register - register page
+
+https://secret-family-recipes-1.herokuapp.com/api/auth/login - login page
+
+both require just a username and password

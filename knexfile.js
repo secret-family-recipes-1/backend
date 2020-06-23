@@ -12,6 +12,16 @@ module.exports = {
     seeds: { directory: './database/seeds' },
   },
 
+  testing: {
+    client: 'pg',
+    connection: { host: "localhost", 
+    database: "recipes", user: 'postgres', password: "ohman4" },
+    migrations: {
+      directory: './database/migrations',
+    },
+    seeds: { directory: './database/seeds' },
+  },
+
  
 
   production: {
