@@ -18,10 +18,10 @@ server.use(express.json());
 
 
 server.use('/api/auth', authRouter);
-server.use('/api/recipes', authenticate, recipesRouter)
-server.use('/api/categories', authenticate,  categoriesRouter)
-server.use('/api/ingredients', authenticate, ingredientsRouter)
-server.use('/api/steps', authenticate, stepsRouter )
+server.use('/api/recipes',  recipesRouter)
+server.use('/api/categories', categoriesRouter)
+server.use('/api/ingredients', ingredientsRouter)
+server.use('/api/steps', stepsRouter )
 
 
 
