@@ -17,11 +17,11 @@ server.use(cors())
 server.use(express.json());
 
 
-server.use('/api/auth', authRouter);
-server.use('/api/recipes',  recipesRouter)
-server.use('/api/categories', categoriesRouter)
-server.use('/api/ingredients', ingredientsRouter)
-server.use('/api/steps', stepsRouter )
+// server.use('/api/auth', authRouter);
+// server.use('/api/recipes',  recipesRouter)
+// server.use('/api/categories', categoriesRouter)
+// server.use('/api/ingredients', ingredientsRouter)
+// server.use('/api/steps', stepsRouter )
 
 
 
